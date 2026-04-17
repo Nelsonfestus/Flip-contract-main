@@ -1,10 +1,10 @@
-import { defineConfig } from 'vinxi/config'
+import { createApp } from 'vinxi'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default createApp({
   server: {
     preset: 'vercel',
   },
