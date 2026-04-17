@@ -5,6 +5,18 @@ import { resolve } from 'pathe'
 
 const root = process.cwd()
 
+// Dedicated plugin to force-inject the alias
+const aliasPlugin = () => ({
+  name: 'force-alias',
+  config: () => ({
+    resolve: {
+      alias: {
+        '@': resolve(root, 'src'),
+      },
+    },
+  }),
+})
+
 export default createApp({
   server: {
     preset: 'vercel',
@@ -18,14 +30,8 @@ export default createApp({
       plugins: () => [
         tanstackStart(),
         viteReact(),
+        aliasPlugin(),
       ],
-      vite: {
-        resolve: {
-          alias: {
-            '@': resolve(root, 'src'),
-          },
-        },
-      },
     },
     {
       name: 'ssr',
@@ -35,14 +41,8 @@ export default createApp({
       plugins: () => [
         tanstackStart(),
         viteReact(),
+        aliasPlugin(),
       ],
-      vite: {
-        resolve: {
-          alias: {
-            '@': resolve(root, 'src'),
-          },
-        },
-      },
     },
   ],
 })
