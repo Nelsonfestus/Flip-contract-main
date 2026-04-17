@@ -8,10 +8,12 @@ export default createApp({
   server: {
     preset: 'vercel',
   },
-  routers: {
-    client: {
+  routers: [
+    {
+      name: 'client',
       type: 'client',
-      entry: './src/client.tsx',
+      handler: './src/client.tsx',
+      target: 'browser',
       plugins: () => [
         viteTsConfigPaths({ projects: ['./tsconfig.json'] }),
         tailwindcss(),
@@ -19,9 +21,11 @@ export default createApp({
         viteReact(),
       ],
     },
-    ssr: {
+    {
+      name: 'ssr',
       type: 'http',
-      entry: './src/ssr.tsx',
+      handler: './src/ssr.tsx',
+      target: 'server',
       plugins: () => [
         viteTsConfigPaths({ projects: ['./tsconfig.json'] }),
         tailwindcss(),
@@ -29,5 +33,5 @@ export default createApp({
         viteReact(),
       ],
     },
-  },
+  ],
 })
