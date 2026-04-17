@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Download, FileText, AlertTriangle, Info, Lightbulb, Search, MapPin, Printer } from 'lucide-react'
-import { toast } from '@/lib/toast'
+import { toast } from '../../lib/toast'
 
 function InfoBox({ type, children }: { type: 'tip' | 'warn' | 'note'; children: React.ReactNode }) {
   const cfg = {

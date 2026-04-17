@@ -1,12 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 import { Building, Landmark, Send, Building2, Mail } from 'lucide-react'
-import SectionLayout from '@/components/SectionLayout'
-import HedgeFundBuyers from '@/components/sections/HedgeFundBuyers'
-import InvestmentBrokerages from '@/components/sections/InvestmentBrokerages'
-import BuyerTemplate from '@/components/sections/BuyerTemplate'
-import TitleCompanies from '@/components/sections/TitleCompanies'
-import DispositionEmails from '@/components/sections/DispositionEmails'
+import SectionLayout from '../components/SectionLayout'
+import HedgeFundBuyers from '../components/sections/HedgeFundBuyers'
+import InvestmentBrokerages from '../components/sections/InvestmentBrokerages'
+import BuyerTemplate from '../components/sections/BuyerTemplate'
+import TitleCompanies from '../components/sections/TitleCompanies'
+import DispositionEmails from '../components/sections/DispositionEmails'
 
 export const Route = createFileRoute('/buyers')({
   component: BuyersPage,

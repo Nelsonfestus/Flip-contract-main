@@ -1,10 +1,10 @@
 import { createFileRoute, useNavigate, Link } from '@tanstack/react-router'
 import { useState, useRef, useCallback, useEffect } from 'react'
 import { Menu, X, Lock, Shield, ChevronRight, Flame, Building2, MessageCircle, PartyPopper, Users, FileText, Search, Scale, Zap, Home, LogOut, Target, FileCheck, Users2, Gamepad2, Settings, Sparkles, CircleCheckBig, Lightbulb, Info, Vault } from 'lucide-react'
-import Paywall, { usePaywall, FREE_ROUTES } from '@/components/Paywall'
-import { useAuth } from '@/hooks/useAuth'
-import GlobalSearch from '@/components/GlobalSearch'
-import OnboardingTour, { RestartTourButton } from '@/components/OnboardingTour'
+import Paywall, { usePaywall, FREE_ROUTES } from '../components/Paywall'
+import { useAuth } from '../hooks/useAuth'
+import GlobalSearch from '../components/GlobalSearch'
+import OnboardingTour, { RestartTourButton } from '../components/OnboardingTour'
 
 export const Route = createFileRoute('/')({
   component: HubPage,

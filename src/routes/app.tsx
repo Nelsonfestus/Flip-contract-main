@@ -1,11 +1,11 @@
 import { createFileRoute, useNavigate, Link } from '@tanstack/react-router'
 import { useState, useRef, useCallback, useEffect } from 'react'
 import { Menu, X, Lock, Shield, ChevronRight, Flame, Building2, MessageCircle, PartyPopper, Users, FileText, Search, Scale, Zap, Home, LogOut, LogIn, Target, FileCheck, Users2, Gamepad2, Settings, Sparkles, CircleCheckBig, Lightbulb, Info, Vault } from 'lucide-react'
-import { ProtectedRoute } from '@/components/ProtectedRoute'
-import { useAuth } from '@/hooks/useAuth'
-import GlobalSearch from '@/components/GlobalSearch'
-import OnboardingTour, { RestartTourButton } from '@/components/OnboardingTour'
-import { DemoBookingForm } from '@/components/DemoBookingForm'
+import { ProtectedRoute } from '../components/ProtectedRoute'
+import { useAuth } from '../hooks/useAuth'
+import GlobalSearch from '../components/GlobalSearch'
+import OnboardingTour, { RestartTourButton } from '../components/OnboardingTour'
+import { DemoBookingForm } from '../components/DemoBookingForm'
 
 export const Route = createFileRoute('/app')({
   component: HubPage,

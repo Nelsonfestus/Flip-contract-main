@@ -1,8 +1,8 @@
 import { useState, useRef, useCallback, useEffect } from 'react'
 import { Link, useNavigate } from '@tanstack/react-router'
 import { Menu, X, Flame, Building2, MessageCircle, Users, ChevronLeft, ChevronRight, FileText, Search, Scale, Zap, Home, LogOut, Gamepad2, Settings, Sparkles, Vault } from 'lucide-react'
-import { ProtectedRoute } from '@/components/ProtectedRoute'
-import { useAuth } from '@/hooks/useAuth'
+import { ProtectedRoute } from '../components/ProtectedRoute'
+import { useAuth } from '../hooks/useAuth'
 
 export interface SectionTab {
   id: string

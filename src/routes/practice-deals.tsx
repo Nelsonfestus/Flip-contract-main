@@ -1,9 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 import { Gamepad2, Phone } from 'lucide-react'
-import SectionLayout from '@/components/SectionLayout'
-import PracticeDeal from '@/components/sections/PracticeDeal'
-import ScriptCoach from '@/components/sections/ScriptCoach'
+import SectionLayout from '../components/SectionLayout'
+import PracticeDeal from '../components/sections/PracticeDeal'
+import ScriptCoach from '../components/sections/ScriptCoach'
 
 export const Route = createFileRoute('/practice-deals')({
   component: PracticeDealsPage,

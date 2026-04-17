@@ -1,12 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 import { Search, ShoppingCart, MessageSquare, Mail, Map } from 'lucide-react'
-import SectionLayout from '@/components/SectionLayout'
-import SkipTrace from '@/components/sections/SkipTrace'
-import BuyLeads from '@/components/sections/BuyLeads'
-import SalesScripts from '@/components/sections/SalesScripts'
-import MarketingTemplates from '@/components/sections/MarketingTemplates'
-import PropertyMap from '@/components/sections/PropertyMap'
+import SectionLayout from '../components/SectionLayout'
+import SkipTrace from '../components/sections/SkipTrace'
+import BuyLeads from '../components/sections/BuyLeads'
+import SalesScripts from '../components/sections/SalesScripts'
+import MarketingTemplates from '../components/sections/MarketingTemplates'
+import PropertyMap from '../components/sections/PropertyMap'
 
 export const Route = createFileRoute('/deals')({
   component: DealsPage,

@@ -12,14 +12,14 @@ import {
   TrendingUp, Upload, DownloadCloud, CheckSquare, Square,
   Flag, CircleDot, Filter, Hash, Activity, Printer, Zap, Shield
 } from 'lucide-react'
-import { supabase } from '@/lib/supabase'
-import LeadPipeline from '@/components/sections/LeadPipeline'
-import SmartLeadImporter from '@/components/sections/SmartLeadImporter'
-import DealTracker from '@/components/sections/DealTracker'
-import ActivityFeed from '@/components/sections/ActivityFeed'
-import DealMaker from '@/components/sections/OfferBot'
-import { toast } from '@/lib/toast'
-import GlobalSearch from '@/components/GlobalSearch'
+import { supabase } from '../lib/supabase'
+import LeadPipeline from '../components/sections/LeadPipeline'
+import SmartLeadImporter from '../components/sections/SmartLeadImporter'
+import DealTracker from '../components/sections/DealTracker'
+import ActivityFeed from '../components/sections/ActivityFeed'
+import DealMaker from '../components/sections/OfferBot'
+import { toast } from '../lib/toast'
+import GlobalSearch from '../components/GlobalSearch'
 
 export const Route = createFileRoute('/crm')({
   component: CrmPage,

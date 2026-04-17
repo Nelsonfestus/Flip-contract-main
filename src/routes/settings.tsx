@@ -4,8 +4,8 @@ import {
   ChevronLeft, Mail, User, CreditCard, Shield, LogOut, Loader2,
   AlertTriangle, Check, KeyRound, Settings, Crown,
 } from 'lucide-react'
-import { useAuth } from '@/hooks/useAuth'
-import { supabase } from '@/lib/supabase'
+import { useAuth } from '../hooks/useAuth'
+import { supabase } from '../lib/supabase'
 
 export const Route = createFileRoute('/settings')({
   component: SettingsPage,

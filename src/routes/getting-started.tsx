@@ -1,11 +1,11 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 import { Flame, GraduationCap, BookOpen, ClipboardCheck } from 'lucide-react'
-import SectionLayout from '@/components/SectionLayout'
-import DailyMotivation from '@/components/sections/DailyMotivation'
-import WholesaleGlossary from '@/components/sections/WholesaleGlossary'
-import KeyVerbiage from '@/components/sections/KeyVerbiage'
-import DealChecklist from '@/components/sections/DealChecklist'
+import SectionLayout from '../components/SectionLayout'
+import DailyMotivation from '../components/sections/DailyMotivation'
+import WholesaleGlossary from '../components/sections/WholesaleGlossary'
+import KeyVerbiage from '../components/sections/KeyVerbiage'
+import DealChecklist from '../components/sections/DealChecklist'
 
 export const Route = createFileRoute('/getting-started')({
   component: GettingStartedPage,

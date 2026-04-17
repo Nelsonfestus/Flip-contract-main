@@ -4,7 +4,7 @@ import {
   LogIn, UserPlus, Mail, AlertCircle, Loader2, ChevronLeft,
   Eye, EyeOff, Users, ArrowRight, Shield, Lock, Settings, Key,
 } from 'lucide-react'
-import { supabase } from '@/lib/supabase'
+import { supabase } from '../lib/supabase'
 
 export const Route = createFileRoute('/login')({
   component: LoginPage,

@@ -6,8 +6,8 @@ import {
   ArrowLeft, Bed, Bath, Maximize, Hammer, BarChart3, Eye, Share2,
   ChevronRight, Calculator, FileText, Tag, Zap, Star, ArrowUpRight
 } from 'lucide-react'
-import { useAuth } from '@/hooks/useAuth'
-import GlobalSearch from '@/components/GlobalSearch'
+import { useAuth } from '../hooks/useAuth'
+import GlobalSearch from '../components/GlobalSearch'
 
 interface PropertyPost {
   id: string

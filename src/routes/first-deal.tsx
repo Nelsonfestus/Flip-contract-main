@@ -1,8 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 import { Sparkles } from 'lucide-react'
-import SectionLayout from '@/components/SectionLayout'
-import FirstDealWizard from '@/components/sections/FirstDealWizard'
+import SectionLayout from '../components/SectionLayout'
+import FirstDealWizard from '../components/sections/FirstDealWizard'
 
 export const Route = createFileRoute('/first-deal')({
   component: FirstDealPage,

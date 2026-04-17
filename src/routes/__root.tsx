@@ -1,11 +1,11 @@
 import { HeadContent, Link, Scripts, createRootRoute } from '@tanstack/react-router'
-import { AuthProvider } from '@/context/AuthContext'
-import { ChatWidget } from '@/components/ChatWidget'
-import { DealTicker } from '@/components/DealTicker'
-import { ShootingStars } from '@/components/ShootingStars'
-import { SignOutButton } from '@/components/SignOutButton'
-import { MobileBottomNav } from '@/components/MobileBottomNav'
-import { ToastContainer } from '@/lib/toast'
+import { AuthProvider } from '../context/AuthContext'
+import { ChatWidget } from '../components/ChatWidget'
+import { DealTicker } from '../components/DealTicker'
+import { ShootingStars } from '../components/ShootingStars'
+import { SignOutButton } from '../components/SignOutButton'
+import { MobileBottomNav } from '../components/MobileBottomNav'
+import { ToastContainer } from '../lib/toast'
 import '../styles.css'
 
 export const Route = createRootRoute({

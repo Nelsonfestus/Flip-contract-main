@@ -1,11 +1,11 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 import { FileText, XCircle, Handshake, Scale } from 'lucide-react'
-import SectionLayout from '@/components/SectionLayout'
-import ContractTemplates from '@/components/sections/ContractTemplates'
-import CancellationContracts from '@/components/sections/CancellationContracts'
-import JVResources from '@/components/sections/JVResources'
-import StateLaws from '@/components/sections/StateLaws'
+import SectionLayout from '../components/SectionLayout'
+import ContractTemplates from '../components/sections/ContractTemplates'
+import CancellationContracts from '../components/sections/CancellationContracts'
+import JVResources from '../components/sections/JVResources'
+import StateLaws from '../components/sections/StateLaws'
 
 export const Route = createFileRoute('/contracts-legal')({
   component: ContractsLegalPage,

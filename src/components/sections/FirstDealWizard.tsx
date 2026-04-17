@@ -6,7 +6,7 @@ import {
   AlertTriangle, Lightbulb, Copy, Target,
   Sparkles,
 } from 'lucide-react'
-import { toast } from '@/lib/toast'
+import { toast } from '../../lib/toast'
 
 /* ─── helpers ─── */
 function fmt(n: number) {

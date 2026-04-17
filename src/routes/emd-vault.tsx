@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
-import SectionLayout from '@/components/SectionLayout'
+import SectionLayout from '../components/SectionLayout'
 import {
   Vault, Plus, Clock, CheckCircle, XCircle, DollarSign, AlertTriangle,
   FileText, Building2, User, Upload, ChevronRight, ChevronLeft,

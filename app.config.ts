@@ -1,21 +1,6 @@
 import { createApp } from 'vinxi'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact from '@vitejs/plugin-react'
-import { resolve } from 'pathe'
-
-const root = process.cwd()
-
-// Dedicated plugin to force-inject the alias
-const aliasPlugin = () => ({
-  name: 'force-alias',
-  config: () => ({
-    resolve: {
-      alias: {
-        '@': resolve(root, 'src'),
-      },
-    },
-  }),
-})
 
 export default createApp({
   server: {
@@ -30,7 +15,6 @@ export default createApp({
       plugins: () => [
         tanstackStart(),
         viteReact(),
-        aliasPlugin(),
       ],
     },
     {
@@ -41,7 +25,6 @@ export default createApp({
       plugins: () => [
         tanstackStart(),
         viteReact(),
-        aliasPlugin(),
       ],
     },
   ],

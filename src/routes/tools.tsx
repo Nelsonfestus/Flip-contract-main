@@ -1,14 +1,14 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 import { Zap, LayoutGrid, ArrowRightLeft, DollarSign, Phone, Star, History } from 'lucide-react'
-import SectionLayout from '@/components/SectionLayout'
-import QuickOfferCalc from '@/components/sections/QuickOfferCalc'
-import MultiFamilyCalc from '@/components/sections/MultiFamilyCalc'
-import InvestmentStrategyCalc from '@/components/sections/InvestmentStrategyCalc'
-import FundingSources from '@/components/sections/FundingSources'
-import BookingCall from '@/components/sections/BookingCall'
-import Reviews from '@/components/sections/Reviews'
-import CalculatorHistory from '@/components/sections/CalculatorHistory'
+import SectionLayout from '../components/SectionLayout'
+import QuickOfferCalc from '../components/sections/QuickOfferCalc'
+import MultiFamilyCalc from '../components/sections/MultiFamilyCalc'
+import InvestmentStrategyCalc from '../components/sections/InvestmentStrategyCalc'
+import FundingSources from '../components/sections/FundingSources'
+import BookingCall from '../components/sections/BookingCall'
+import Reviews from '../components/sections/Reviews'
+import CalculatorHistory from '../components/sections/CalculatorHistory'
 
 export const Route = createFileRoute('/tools')({
   component: ToolsPage,

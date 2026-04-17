@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { LogOut } from 'lucide-react'
-import { useAuth } from '@/hooks/useAuth'
+import { useAuth } from '../hooks/useAuth'
 
 export function SignOutButton() {
   const { user, signOut } = useAuth()

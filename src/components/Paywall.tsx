@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Lock, CreditCard, CheckCircle, Calendar, Phone, Key, AlertCircle, FileText, Search, Building2, MessageSquare, Handshake, Scale, BookOpen, Building, ShoppingCart, Star, XCircle, Mail, DollarSign, ClipboardCheck, Zap, LayoutGrid, Flame, GraduationCap, Map, Landmark, Send, ChevronDown, ChevronUp, ArrowRight, Shield, Users, TrendingUp, Contact, Sparkles, Download, Gamepad2, Target, MessageCircle, Vault, Upload, Activity, BarChart3, Bot, Eye, EyeOff } from 'lucide-react'
 import CrmVideoPreview from './CrmVideoPreview'
 import DealAnalyzerVideo from './DealAnalyzerVideo'
-import { supabase } from '@/lib/supabase'
+import { supabase } from '../lib/supabase'
 
 const STORAGE_KEY = 'wre_hub_unlocked'
 

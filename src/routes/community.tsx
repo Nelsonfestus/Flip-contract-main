@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useState, useEffect, useCallback } from 'react'
 import { Home, Plus, X, MessageCircle, Trophy, PartyPopper, ThumbsUp, DollarSign, MapPin, User, Clock, Loader2, HelpCircle, ChevronDown, LogOut } from 'lucide-react'
-import { useAuth } from '@/hooks/useAuth'
-import GlobalSearch from '@/components/GlobalSearch'
+import { useAuth } from '../hooks/useAuth'
+import GlobalSearch from '../components/GlobalSearch'
 
 interface CommunityPost {
   id: string
