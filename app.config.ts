@@ -1,11 +1,9 @@
 import { createApp } from 'vinxi'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact from '@vitejs/plugin-react'
-import { fileURLToPath } from 'node:url'
-import { dirname, resolve } from 'node:path'
+import { resolve } from 'pathe'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+const root = process.cwd()
 
 export default createApp({
   server: {
@@ -24,7 +22,7 @@ export default createApp({
       vite: {
         resolve: {
           alias: {
-            '@': resolve(__dirname, './src'),
+            '@': resolve(root, 'src'),
           },
         },
       },
@@ -41,7 +39,7 @@ export default createApp({
       vite: {
         resolve: {
           alias: {
-            '@': resolve(__dirname, './src'),
+            '@': resolve(root, 'src'),
           },
         },
       },
