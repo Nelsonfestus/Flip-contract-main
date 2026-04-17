@@ -15,7 +15,7 @@ export default createApp({
       handler: './src/client.tsx',
       target: 'browser',
       plugins: () => [
-        viteTsConfigPaths({ projects: ['./tsconfig.json'] }),
+        viteTsConfigPaths(),
         tailwindcss(),
         tanstackStart(),
         viteReact(),
@@ -27,7 +27,7 @@ export default createApp({
       handler: './src/ssr.tsx',
       target: 'server',
       plugins: () => [
-        viteTsConfigPaths({ projects: ['./tsconfig.json'] }),
+        viteTsConfigPaths(),
         tailwindcss(),
         tanstackStart(),
         viteReact(),
