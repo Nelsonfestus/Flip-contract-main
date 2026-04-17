@@ -1,12 +1,6 @@
 import { createApp } from 'vinxi'
-import tailwindcss from '@tailwindcss/vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import viteReact from '@vitejs/plugin-react'
-import { fileURLToPath } from 'node:url'
-import { dirname, resolve } from 'node:path'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
 
 export default createApp({
   server: {
@@ -21,13 +15,11 @@ export default createApp({
       plugins: () => [
         tanstackStart(),
         viteReact(),
-        tailwindcss(),
       ],
-      // Replace vite-tsconfig-paths with a manual alias
       vite: {
         resolve: {
           alias: {
-            '@': resolve(__dirname, './src'),
+            '@': './src',
           },
         },
       },
@@ -40,12 +32,11 @@ export default createApp({
       plugins: () => [
         tanstackStart(),
         viteReact(),
-        tailwindcss(),
       ],
       vite: {
         resolve: {
           alias: {
-            '@': resolve(__dirname, './src'),
+            '@': './src',
           },
         },
       },
