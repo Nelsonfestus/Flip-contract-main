@@ -1,31 +1,7 @@
-import { createApp } from 'vinxi'
-import { tanstackStart } from '@tanstack/react-start/plugin/vite'
-import viteReact from '@vitejs/plugin-react'
+import { defineConfig } from '@tanstack/react-start/config'
 
-export default createApp({
+export default defineConfig({
   server: {
-    preset: 'vercel',
+    preset: 'netlify',
   },
-  routers: [
-    {
-      name: 'client',
-      type: 'spa',
-      handler: './src/client.tsx',
-      target: 'browser',
-      plugins: () => [
-        tanstackStart(),
-        viteReact(),
-      ],
-    },
-    {
-      name: 'ssr',
-      type: 'http',
-      handler: './src/ssr.tsx',
-      target: 'server',
-      plugins: () => [
-        tanstackStart(),
-        viteReact(),
-      ],
-    },
-  ],
 })
